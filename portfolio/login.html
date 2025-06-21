@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Vishaal</title>
+  <style>
+    body {
+      background: #00131c;
+      font-family: sans-serif;
+      color: white;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: rgba(255,255,255,0.05);
+      padding: 3rem;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 157, 226, 0.2);
+      animation: pulseIn 1.2s ease;
+    }
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 8px;
+    }
+    button {
+      background: linear-gradient(to right, #9ffcff, #ff9de2);
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 20px;
+      color: black;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }
+    @keyframes pulseIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+<div class="login-box">
+  <h2>Welcome Back</h2>
+  <input type="email" placeholder="Email" />
+  <input type="password" placeholder="Password" />
+  <button>Login</button>
+</div>
+</body>
+</html>

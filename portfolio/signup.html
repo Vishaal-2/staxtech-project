@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | Vishaal</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #011627, #000f1a);
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .signup-box {
+      background: rgba(255,255,255,0.05);
+      padding: 3rem;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 400px;
+      animation: slideDown 1s ease-out;
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      margin: 1rem 0;
+      border: none;
+      border-radius: 10px;
+    }
+    button {
+      background: linear-gradient(135deg, #ff9de2, #9ffcff);
+      color: black;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      font-weight: bold;
+      width: 100%;
+      cursor: pointer;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+<div class="signup-box">
+  <h2>Create Your Account</h2>
+  <input type="text" placeholder="Full Name" />
+  <input type="email" placeholder="Email Address" />
+  <input type="password" placeholder="Password" />
+  <button>Sign Up</button>
+</div>
+</body>
+</html>

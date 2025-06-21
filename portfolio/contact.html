@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Vishaal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #00131c, #011627);
+      color: white;
+    }
+    header, footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #000e17;
+      color: #9ffcff;
+    }
+    form {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    input, textarea {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    button {
+      background: linear-gradient(135deg, #ff9de2, #9ffcff);
+      color: black;
+      padding: 0.75rem 2rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+<header><h1>Get in Touch</h1></header>
+
+<form>
+  <input type="text" placeholder="Your Name" required />
+  <input type="email" placeholder="Your Email" required />
+  <textarea rows="6" placeholder="Your Message"></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<footer>© Vishaal Worlds Ltd 2025</footer>
+</body>
+</html>

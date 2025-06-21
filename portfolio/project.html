@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Vishaal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at center, #011627 0%, #00131c 100%);
+      color: white;
+    }
+    header.nav {
+      background: rgba(0, 18, 34, 0.8);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ff9de2;
+      text-shadow: 0 0 10px #ff9de2;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #9ffcff;
+    }
+    .button {
+      background: linear-gradient(135deg, #ff9de2, #9ffcff);
+      padding: 0.5rem 1.2rem;
+      border-radius: 30px;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+    }
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 15px rgba(255, 157, 226, 0.6);
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.04);
+      border-left: 4px solid #ff9de2;
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000e17;
+      color: #9ffcff;
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">vishaal</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="call.html">Book a Call</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a class="button" href="signup.html">Get started — it's free</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="hero">
+  <h1>My Projects</h1>
+  <p>A showcase of some of my best work, combining design, tech, and creativity.</p>
+</main>
+
+<section class="projects-grid">
+  <div class="project-card">
+    <h2>AI Resume Builder</h2>
+    <p>Automatically generates modern resumes from LinkedIn profiles using GPT-based tools with clean, responsive UI.</p>
+    <a href="#" class="button">View Case Study</a>
+  </div>
+  <div class="project-card">
+    <h2>Interactive Portfolio Engine</h2>
+    <p>A dynamic codebase that allows creatives to generate animated portfolio websites with live customization.</p>
+    <a href="#" class="button">Explore Project</a>
+  </div>
+  <div class="project-card">
+    <h2>Personal Branding Toolkit</h2>
+    <p>Custom tools to build personal brands: logo generators, content templates, and web identity setup guides.</p>
+    <a href="#" class="button">Learn More</a>
+  </div>
+</section>
+
+<footer>
+  <p>© Vishaal Worlds Ltd 2025</p>
+</footer>
+
+</body>
+</html>

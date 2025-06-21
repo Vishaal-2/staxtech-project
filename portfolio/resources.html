@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources | Vishaal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at center, #011627 0%, #00131c 100%);
+      color: white;
+    }
+    header, footer {
+      background: rgba(0, 18, 34, 0.8);
+      padding: 1rem 2rem;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 1.5rem;
+      padding: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .glow {
+      color: #9ffcff;
+      text-shadow: 0 0 10px #9ffcff;
+    }
+    .resources-list {
+      padding: 3rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeUp 1s ease-in-out;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .resource-item {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #9ffcff;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1 class="glow">Developer Resources</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="call.html">Book a Call</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a class="glow" href="signup.html">Get started</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="resources-list">
+  <div class="resource-item">
+    <h2>Design Inspiration</h2>
+    <p>My curated library of award-winning websites, UI kits, and Figma resources.</p>
+  </div>
+  <div class="resource-item">
+    <h2>Code Templates</h2>
+    <p>Boilerplates for React, Next.js, TailwindCSS, and custom CMS setups.</p>
+  </div>
+  <div class="resource-item">
+    <h2>AI Tools</h2>
+    <p>Prompt templates and API setups for GPT, DALL·E, and LangChain integrations.</p>
+  </div>
+</main>
+
+<footer>© Vishaal Worlds Ltd 2025</footer>
+</body>
+</html>

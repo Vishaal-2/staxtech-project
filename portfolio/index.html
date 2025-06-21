@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vishaal | Start Building Magic</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: radial-gradient(ellipse at top, #011627 0%, #00131c 100%);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header.nav {
+            background: rgba(0, 18, 34, 0.9);
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff9de2;
+            text-shadow: 0 0 10px #ff9de2;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #9ffcff;
+        }
+
+        .button {
+            background: linear-gradient(135deg, #ff9de2, #9ffcff);
+            padding: 0.6rem 1.4rem;
+            border-radius: 30px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(-100%);
+            transition: transform 0.4s ease;
+        }
+
+        .button:hover::after {
+            transform: translateX(100%);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px rgba(159, 252, 255, 0.5);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 7rem 2rem 4rem;
+            animation: fadeInSlide 1.5s ease forwards;
+        }
+
+        @keyframes fadeInSlide {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .magic {
+            color: #9ffcff;
+            text-shadow: 0 0 10px #9ffcff;
+        }
+
+        .cta-buttons {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #000e17;
+            color: #9ffcff;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="nav">
+    <div class="logo">vishaal</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="call.html">Book a Call</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a class="button" href="signup.html">Get started — it's free</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="hero">
+    <h1>Start building <span class="magic">magic</span> today.</h1>
+    <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+        I help startups, creators, and founders launch powerful digital experiences. From blazing-fast sites to AI-driven tools, it starts here.
+    </p>
+    <div class="cta-buttons">
+        <a href="call.html" class="button">Book a Call</a>
+        <a href="signup.html" class="button">Get Started Now</a>
+    </div>
+</main>
+
+<footer>
+    <p>© Vishaal Worlds Ltd 2025</p>
+</footer>
+
+</body>
+</html>

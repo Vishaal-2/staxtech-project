@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Book a Call | Vishaal</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #00121b, #000b11);
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        .call-container {
+            margin: 4rem auto;
+            max-width: 600px;
+            padding: 2rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            box-shadow: 0 0 30px rgba(159, 252, 255, 0.2);
+            animation: popIn 1s ease-in-out;
+        }
+        @keyframes popIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        a.button {
+            display: inline-block;
+            background: linear-gradient(135deg, #9ffcff, #ff9de2);
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            border-radius: 50px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="call-container">
+    <h1>Schedule a Strategy Call</h1>
+    <p>Let's talk about your goals and how I can help you build something magical.</p>
+    <a class="button" href="#">Book via Calendly</a>
+</div>
+</body>
+</html>
